@@ -42,6 +42,7 @@ let package = Package(
                 path: "AFNetworking",
                 publicHeadersPath: ""),
         .target(name: "AFNetworkingUIKit",
+                dependencies: ["AFNetworking"],
                 path: "UIKit+AFNetworking",
                 publicHeadersPath: "")
     ])
